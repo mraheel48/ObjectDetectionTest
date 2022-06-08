@@ -1,16 +1,13 @@
-package com.example.objectdetectiontest
+package com.example.objectdetectiontest.utils
 
 import android.app.Activity
 import android.content.Context
-import android.content.res.AssetManager
 import android.graphics.Bitmap
-import android.graphics.BitmapFactory
 import android.graphics.Canvas
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 import android.widget.Toast
-import java.io.IOException
-import java.io.InputStream
+import com.example.objectdetectiontest.NativeLibraryLoader
 
 object Util {
 

@@ -1,4 +1,4 @@
-package com.example.objectdetectiontest
+package com.example.objectdetectiontest.ui
 
 import android.graphics.Bitmap
 import androidx.appcompat.app.AppCompatActivity
@@ -7,12 +7,14 @@ import android.os.CountDownTimer
 import android.os.Handler
 import android.os.Looper
 import android.view.View
-import android.widget.FrameLayout
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.palette.graphics.Palette
+import com.example.objectdetectiontest.*
 import com.example.objectdetectiontest.databinding.ActivityMainBinding
+import com.example.objectdetectiontest.utils.ImageUtils
+import com.example.objectdetectiontest.utils.Util
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
@@ -64,7 +66,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun settingBitmap(bitmap: Bitmap) {
 
-        faceBitmap = ImageUtils.getBitmapResize(bitmap, mainBinding.objectImage.width, mainBinding.objectImage.height)
+        faceBitmap = ImageUtils.getBitmapResize(
+            bitmap,
+            mainBinding.objectImage.width,
+            mainBinding.objectImage.height
+        )
 
         workerHandler.post {
             mainBinding.rootLayout.layoutParams = ConstraintLayout.LayoutParams(

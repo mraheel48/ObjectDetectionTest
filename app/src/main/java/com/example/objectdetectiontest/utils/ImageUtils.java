@@ -1,4 +1,4 @@
-package com.example.objectdetectiontest;
+package com.example.objectdetectiontest.utils;
 
 import android.content.Context;
 import android.graphics.Bitmap;

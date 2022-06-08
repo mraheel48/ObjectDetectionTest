@@ -6,6 +6,8 @@ import android.os.AsyncTask;
 import android.view.View;
 import android.widget.ProgressBar;
 
+import com.example.objectdetectiontest.utils.BitmapUtils;
+
 public class MLCropAsyncTask extends AsyncTask<Void, Void, Void> {
     Activity activity;
     ProgressBar crop_progress_bar;
