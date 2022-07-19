@@ -18,9 +18,6 @@ public class Second extends AppCompatActivity {
 
     private ActivitySecondBinding mainBinding;
 
-    /*val workerThread: ExecutorService = Executors.newCachedThreadPool()
-    val workerHandler = Handler(Looper.getMainLooper())*/
-
     private ExecutorService workerThread = Executors.newCachedThreadPool();
     private Handler workerHandler = new Handler(Looper.getMainLooper());
 
